@@ -1,0 +1,207 @@
+.admin-staff-month-wrap {
+    min-height: calc(100vh - 80px);
+    background: #f0eff2;
+    padding: 56px 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.admin-staff-month-card {
+    width: 100%;
+    max-width: 980px;
+}
+
+.admin-staff-month-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 22px;
+    color: #000;
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.2;
+}
+
+.admin-staff-month-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 4px;
+    height: 24px;
+    background: #000;
+    border-radius: 2px;
+}
+
+.admin-staff-month-nav {
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 16px 22px;
+    box-shadow: none;
+    margin: 56px auto 22px;
+}
+
+.month-nav-btn {
+    font-size: 15px;
+    font-weight: 800;
+    color: #737373;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.month-nav-btn:hover {
+    text-decoration: underline;
+}
+
+.month-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+}
+
+.month-display-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.month-display-text {
+    font-weight: 800;
+}
+
+.admin-staff-month-table {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    table-layout: fixed;
+}
+
+.admin-staff-month-table thead th {
+    background: #fff;
+    border-bottom: 3px solid #e6e6e6;
+}
+
+.admin-staff-month-table th,
+.admin-staff-month-table td {
+    padding: 14px 18px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.admin-staff-month-table th {
+    font-size: 16px;
+    font-weight: 800;
+    color: #737373;
+}
+
+.admin-staff-month-table tbody td {
+    border-bottom: 2px solid #e6e6e6;
+    font-size: 16px;
+    font-weight: 700;
+    color: #737373;
+}
+
+.admin-staff-month-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.detail-link {
+    font-size: 16px;
+    color: #000;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.detail-link:hover {
+    text-decoration: underline;
+}
+
+.admin-staff-month-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.admin-staff-month-footer {
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 48px auto 0;
+}
+
+.csv-btn {
+    min-width: 140px;
+    padding: 12px 26px;
+    border-radius: 6px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.csv-btn:hover {
+    opacity: 0.9;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .admin-staff-month-card {
+        max-width: 1040px;
+    }
+
+    .admin-staff-month-nav,
+    .admin-staff-month-table,
+    .admin-staff-month-footer {
+        max-width: 920px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:850px) {
+    .admin-staff-month-wrap {
+        padding: 44px 16px 64px;
+    }
+
+    .admin-staff-month-card {
+        max-width: 860px;
+    }
+
+    .admin-staff-month-nav,
+    .admin-staff-month-table,
+    .admin-staff-month-footer {
+        max-width: 760px;
+    }
+
+    .admin-staff-month-table th,
+    .admin-staff-month-table td {
+        padding: 12px 12px;
+    }
+
+    .admin-staff-month-table th,
+    .admin-staff-month-table tbody td,
+    .detail-link {
+        font-size: 14px;
+    }
+
+    .month-display {
+        font-size: 14px;
+    }
+}

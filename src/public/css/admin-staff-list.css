@@ -1,0 +1,135 @@
+.admin-staff-list-wrap {
+    min-height: calc(100vh - 80px);
+    background: #f0eff2;
+    padding: 56px 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.admin-staff-list-card {
+    width: 100%;
+    max-width: 980px;
+}
+
+.admin-staff-list-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 22px;
+    color: #000;
+    position: relative;
+    line-height: 1.2;
+    padding-left: 14px;
+}
+
+.admin-staff-list-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 4px;
+    height: 24px;
+    border-radius: 2px;
+    background: #000;
+}
+
+.admin-staff-list-table {
+    width: 100%;
+    max-width: 860px;
+    margin: 68px auto 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    table-layout: fixed;
+}
+
+.admin-staff-list-table thead th {
+    background: #fff;
+    border-bottom: 3px solid #e6e6e6;
+}
+
+.admin-staff-list-table th,
+.admin-staff-list-table td {
+    padding: 14px 18px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.admin-staff-list-table th {
+    font-size: 16px;
+    font-weight: 800;
+    color: #737373;
+}
+
+.admin-staff-list-table tbody td {
+    border-bottom: 2px solid #e6e6e6;
+    font-size: 16px;
+    font-weight: 700;
+    color: #737373;
+}
+
+.admin-staff-list-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-staff-detail-link {
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+}
+
+.admin-staff-detail-link:hover {
+    text-decoration: underline;
+}
+
+.admin-staff-empty {
+    text-align: center;
+    padding: 32px 24px;
+    color: #737373;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.admin-staff-list-table tbody tr:hover {
+    background: #fafafa;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .admin-staff-list-card {
+        max-width: 1040px;
+    }
+
+    .admin-staff-list-table {
+        max-width: 920px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:850px) {
+    .admin-staff-list-wrap {
+        padding: 44px 16px 64px;
+    }
+
+    .admin-staff-list-card {
+        max-width: 860px;
+    }
+
+    .admin-staff-list-table {
+        max-width: 760px;
+    }
+
+    .admin-staff-list-table th,
+    .admin-staff-list-table td {
+        padding: 12px 12px;
+    }
+
+    .admin-staff-list-table th,
+    .admin-staff-list-table tbody td,
+    .admin-staff-detail-link {
+        font-size: 14px;
+    }
+}
