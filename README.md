@@ -34,6 +34,15 @@
    MAIL_ENCRYPTION=tls
    MAIL_FROM_ADDRESS=test@example.com
    MAIL_FROM_NAME="${APP_NAME}"
+## メール認証
+
+mailtrapを使用してメール認証を実装しています。
+会員登録後、認証メールが送信されます。
+
+1. mailtrapにログインし、Integrationsから**Laravel7.x/8.x**を選択
+2. 表示されるSMTP設定を`MAIL_MAILER`〜`MAIL_ENCRYPTION`まで`.env`に貼り付け
+3. `MAIL_FROM_ADDRESS`には任意のメールアドレスを設定（例: test@example.com）
+4. アプリで会員登録を行うとmailtrapのメールボックスで認証メールを確認できます
 
 ## 使用技術
 - PHP 8.4.10
@@ -54,34 +63,34 @@
 
 ## テストアカウント
 ### 一般ユーザー
- name: 西　伶奈
- email: reina.n@coachtech.com
- password: password123
+1. name: 西　伶奈
+   email: reina.n@coachtech.com
+   password: password123
 
- name: 山田　太郎
- email: taro.y@coachtech.com
- password: password123
+2. name: 山田　太郎
+   email: taro.y@coachtech.com
+   password: password123
 
- name: 増田　一世
- email: issei.m@coachtech.com
- password: password123
+3. name: 増田　一世
+   email: issei.m@coachtech.com
+   password: password123
 
- name: 山本　敬吉
- email: keikichi.y@coachtech.com
- password: password123
+4. name: 山本　敬吉
+   email: keikichi.y@coachtech.com
+   password: password123
 
- name: 秋田　朋美
- email: tomomi.a@coachtech.com
- password: password123
+5. name: 秋田　朋美
+   email: tomomi.a@coachtech.com
+   password: password123
 
- name: 中西　教夫
- email: norio.n@coachtech.com
- password: password123
+6. name: 中西　教夫
+   email: norio.n@coachtech.com
+   password: password123
 
 ### 管理者ユーザー
- name: 管理者ユーザー
- email: admin@example.com
- password: password123
+1. name: 管理者ユーザー
+   email: admin@example.com
+   password: password123
 
 ## PHPUnit
 1. docker-compose exec mysql bash
