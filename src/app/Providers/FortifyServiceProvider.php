@@ -17,6 +17,7 @@ use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use App\Models\User;
+use Laravel\Fortify\Contracts\RegisterResponse;
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -39,6 +40,12 @@ class FortifyServiceProvider extends ServiceProvider
                     return redirect()->route('verification.notice');
                 }
                 return redirect()->intended(Fortify::redirects('login'));
+            }
+        });
+
+        $this->app->instance(RegisterResponse::class, new class implements RegisterResponse {
+            public function toResponse($request) {
+                return redirect()->route('verification.notice');
             }
         });
     }
