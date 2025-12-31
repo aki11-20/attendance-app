@@ -100,6 +100,7 @@ mailtrapを使用してメール認証を実装しています。
 ## PHPUnit
 1. docker-compose exec mysql bash
 2. mysql -u root -p
+// パスワードは root と入力
 3. create database test_database;
 4. docker-compose exec php bash
 5. php artisan migrate:fresh --env=testing
