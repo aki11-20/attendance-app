@@ -8,7 +8,6 @@ use App\Models\User;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Str;
 use Illuminate\Auth\Notifications\VerifyEmail;
 
 class EmailVerificationTest extends TestCase

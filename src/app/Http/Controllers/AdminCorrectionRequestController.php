@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\CorrectionRequest;
-use App\Models\Attendance;
 use Carbon\Carbon;
 
 class AdminCorrectionRequestController extends Controller

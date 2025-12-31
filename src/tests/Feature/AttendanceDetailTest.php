@@ -7,7 +7,6 @@ use Tests\TestCase;
 use App\Models\User;
 use App\Models\Attendance;
 use Illuminate\Support\Facades\DB;
-use Carbon\Carbon;
 
 class AttendanceDetailTest extends TestCase
 {

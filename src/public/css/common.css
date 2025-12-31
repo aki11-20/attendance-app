@@ -41,3 +41,39 @@
     font-weight: 600;
     font-size: 18px;
 }
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .header {
+        padding: 0 32px;
+        height: 90px;
+    }
+
+    .header_logo img {
+        width: 380px;
+    }
+
+    .header_nav a,
+    .header_nav form button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .header {
+        padding: 0 16px;
+        height: 72px;
+    }
+
+    .header_logo img {
+        width: 260px;
+    }
+
+    .header_nav {
+        gap: 18px;
+    }
+
+    .header_nav a,
+    .header_nav form button {
+        font-size: 16px;
+    }
+}
